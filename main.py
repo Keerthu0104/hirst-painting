@@ -1,8 +1,5 @@
 import random
 import turtle
-from PIL import Image
-
-
 import colorgram
 from turtle import Turtle,Screen
 
@@ -48,11 +45,7 @@ for dots in range(1,num_of_dots+1):
         timmy.forward(500)
         timmy.setheading(0)
 
-ts = screen.getcanvas()
-ts.postscript(file="hirst_painting.eps")
 
-img = Image.open("hirst_painting.eps")
-img.save("hirst_painting.png")
 
 screen.exitonclick()
 
